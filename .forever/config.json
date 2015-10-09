@@ -1,0 +1,15 @@
+{
+  "root": "/projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.forever",
+  "pidPath": "/projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.forever/pids",
+  "sockPath": "/projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.forever/sock",
+  "loglength": 100,
+  "columns": [
+    "uid",
+    "command",
+    "script",
+    "forever",
+    "pid",
+    "logfile",
+    "uptime"
+  ]
+}

@@ -1,0 +1,138 @@
+start daemon
+2015-10-09T21:15:56.751Z - [32minfo[39m: start_log_truncate
+2015-10-09T21:15:56.752Z - [34mdebug[39m: calling log_truncate
+2015-10-09T21:15:56.752Z - [32minfo[39m: log_truncate: checking that logfile isn't too long
+after daemon
+2015-10-09T21:15:56.752Z - [34mdebug[39m: read '/projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.sagemathcloud/data/secret_token'
+2015-10-09T21:15:56.752Z - [32minfo[39m: starting tcp server...
+2015-10-09T21:15:56.756Z - [32minfo[39m: listening on port 54447
+2015-10-09T21:15:56.760Z - [32minfo[39m: starting raw server...
+2015-10-09T21:15:56.760Z - [34mdebug[39m: info = {"project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","location":{"host":"10.240.214.249","username":"016c032b7b8b4c07b2c44cf094c6eb7e","port":22,"path":"."},"base_url":""}
+2015-10-09T21:15:57.316Z - [32minfo[39m: raw server (port=41964), host='10.240.214.249', base='/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/raw/'
+2015-10-09T21:15:57.318Z - [32minfo[39m: err = undefined
+2015-10-09T21:15:57.318Z - [34mdebug[39m: Successfully started servers.
+2015-10-09T21:15:57.318Z - [34mdebug[39m: Successfully started servers.
+2015-10-09T21:15:57.327Z - [34mdebug[39m: PARENT: received connection
+2015-10-09T21:15:57.365Z - [34mdebug[39m: received control mesg {"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"git-ls","args":["--time","--limit",999999999,"--start",0,"."],"timeout":45,"bash":false,"err_on_exit":true,"id":"476b1d2f-1a47-41ed-b0c2-bad40c594a46"}
+2015-10-09T21:15:57.365Z - [34mdebug[39m: Handling '{"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"git-ls","args":["--time","--limit",999999999,"--start",0,"."],"timeout":45,"bash":false,"err_on_exit":true,"id":"476b1d2f-1a47-41ed-b0c2-bad40c594a46"}'
+2015-10-09T21:15:57.365Z - [34mdebug[39m: project_exec
+2015-10-09T21:15:57.366Z - [34mdebug[39m: execute_code: "git-ls --time --limit 999999999 --start 0 ."
+2015-10-09T21:15:57.366Z - [34mdebug[39m: Spawning the command git-ls with given args --time,--limit,999999999,--start,0,. and timeout of 45s...
+2015-10-09T21:15:57.368Z - [34mdebug[39m: Listen for stdout, stderr and exit events.
+2015-10-09T21:15:57.403Z - [34mdebug[39m: finished exec of git-ls (took 0.037000179290771484s)
+2015-10-09T21:15:57.403Z - [34mdebug[39m: stdout='{"files":[]}
+', stderr='', exit_code=0
+2015-10-09T21:16:34.332Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"cfd839e0-c673-4ec9-8356-32130a6d1c5c","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././.gitignore","data_uuid":"e789f6af-41bd-44ff-b37d-7362ed8eec79"}
+2015-10-09T21:16:34.332Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"cfd839e0-c673-4ec9-8356-32130a6d1c5c","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././.gitignore","data_uuid":"e789f6af-41bd-44ff-b37d-7362ed8eec79"}'
+2015-10-09T21:16:34.447Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"e531e874-10af-46c7-b5e9-8e46fd0d7d55","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.cpp","data_uuid":"9b900923-7787-4fdd-a1d1-a35733bd73a7"}
+2015-10-09T21:16:34.447Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"e531e874-10af-46c7-b5e9-8e46fd0d7d55","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.cpp","data_uuid":"9b900923-7787-4fdd-a1d1-a35733bd73a7"}'
+2015-10-09T21:16:34.686Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"12ae9488-6308-49f1-8d82-1d96d0fa5e2f","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.hpp","data_uuid":"1829792e-54e8-4e38-a2a1-432c80ee046a"}
+2015-10-09T21:16:34.686Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"12ae9488-6308-49f1-8d82-1d96d0fa5e2f","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.hpp","data_uuid":"1829792e-54e8-4e38-a2a1-432c80ee046a"}'
+2015-10-09T21:16:34.843Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"48db53e0-e4a0-491c-b6b9-750de8b14a94","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.ui","data_uuid":"a2e0cab9-cda6-4294-8c38-6f4bc4699287"}
+2015-10-09T21:16:34.843Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"48db53e0-e4a0-491c-b6b9-750de8b14a94","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././addtetdialog.ui","data_uuid":"a2e0cab9-cda6-4294-8c38-6f4bc4699287"}'
+2015-10-09T21:16:35.079Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"8f823af4-911f-47c9-9fcc-bf60853a6cd9","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.cpp","data_uuid":"b243e570-0505-4486-bd05-5ec7da7816c2"}
+2015-10-09T21:16:35.079Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"8f823af4-911f-47c9-9fcc-bf60853a6cd9","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.cpp","data_uuid":"b243e570-0505-4486-bd05-5ec7da7816c2"}'
+2015-10-09T21:16:35.197Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"dcc9ab63-ecf2-494e-aad4-638ec262527e","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.hpp","data_uuid":"8919c5c2-e7c0-4d92-a61d-0b2767c11e01"}
+2015-10-09T21:16:35.197Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"dcc9ab63-ecf2-494e-aad4-638ec262527e","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.hpp","data_uuid":"8919c5c2-e7c0-4d92-a61d-0b2767c11e01"}'
+2015-10-09T21:16:35.447Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"261d0d6b-0ec1-433f-af1f-3cab2ea75f97","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.ui","data_uuid":"7583bde3-4b19-41df-abd9-b004a79f18d5"}
+2015-10-09T21:16:35.447Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"261d0d6b-0ec1-433f-af1f-3cab2ea75f97","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editobjdialog.ui","data_uuid":"7583bde3-4b19-41df-abd9-b004a79f18d5"}'
+2015-10-09T21:16:35.636Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"4ed3e465-31e3-4109-8b36-1a1becf4737d","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.hpp","data_uuid":"6c532175-7581-4bab-8c18-4337f3e533b5"}
+2015-10-09T21:16:35.637Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"4ed3e465-31e3-4109-8b36-1a1becf4737d","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.hpp","data_uuid":"6c532175-7581-4bab-8c18-4337f3e533b5"}'
+2015-10-09T21:16:35.872Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"79762ed7-f81b-4072-8d3b-8f949ccc2013","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.ui","data_uuid":"93cd8c48-b674-4156-9db2-fbb53bd430a9"}
+2015-10-09T21:16:35.872Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"79762ed7-f81b-4072-8d3b-8f949ccc2013","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.ui","data_uuid":"93cd8c48-b674-4156-9db2-fbb53bd430a9"}'
+2015-10-09T21:16:35.975Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"77216159-bf13-4ffa-b89c-1ab21b9eb6f7","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.cpp","data_uuid":"32619e87-b256-4f79-96e5-5fa2add5fe00"}
+2015-10-09T21:16:35.975Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"77216159-bf13-4ffa-b89c-1ab21b9eb6f7","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editskeletondialog.cpp","data_uuid":"32619e87-b256-4f79-96e5-5fa2add5fe00"}'
+2015-10-09T21:16:36.095Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"1df234dc-3f06-4dee-ab88-b2cf6927ec52","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.cpp","data_uuid":"05875519-4847-4443-b208-e4d538d9295a"}
+2015-10-09T21:16:36.095Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"1df234dc-3f06-4dee-ab88-b2cf6927ec52","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.cpp","data_uuid":"05875519-4847-4443-b208-e4d538d9295a"}'
+2015-10-09T21:16:36.120Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"15da21ef-d767-4eef-b402-8adfe861193c","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.hpp","data_uuid":"66a9cdf2-1012-4eeb-9fc8-60fae78e04c0"}
+2015-10-09T21:16:36.121Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"15da21ef-d767-4eef-b402-8adfe861193c","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.hpp","data_uuid":"66a9cdf2-1012-4eeb-9fc8-60fae78e04c0"}'
+2015-10-09T21:16:36.281Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"dc0b98cc-2af1-4bca-aa90-464a0498e0c6","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.ui","data_uuid":"63eb958f-5b91-48f1-9b53-f02812986356"}
+2015-10-09T21:16:36.281Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"dc0b98cc-2af1-4bca-aa90-464a0498e0c6","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././editsystemdialog.ui","data_uuid":"63eb958f-5b91-48f1-9b53-f02812986356"}'
+2015-10-09T21:16:36.469Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"ee612df1-cc99-4f0f-aa0b-8ebdbcd92d39","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././glwidget.cpp","data_uuid":"d414e759-c745-4831-9f9a-891f53e8b4ff"}
+2015-10-09T21:16:36.469Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"ee612df1-cc99-4f0f-aa0b-8ebdbcd92d39","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././glwidget.cpp","data_uuid":"d414e759-c745-4831-9f9a-891f53e8b4ff"}'
+2015-10-09T21:16:36.470Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"1f51fed7-c538-4990-9046-22ff16112e42","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././glwidget.hpp","data_uuid":"d489911c-97d1-451c-ae34-3ccd99f1a66f"}
+2015-10-09T21:16:36.470Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"1f51fed7-c538-4990-9046-22ff16112e42","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././glwidget.hpp","data_uuid":"d489911c-97d1-451c-ae34-3ccd99f1a66f"}'
+2015-10-09T21:16:36.629Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"00615a18-1623-466f-befa-d04ab8cbfa27","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././License.txt","data_uuid":"e99b9690-7c75-4b6d-8f47-6b712d2635c5"}
+2015-10-09T21:16:36.629Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"00615a18-1623-466f-befa-d04ab8cbfa27","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././License.txt","data_uuid":"e99b9690-7c75-4b6d-8f47-6b712d2635c5"}'
+2015-10-09T21:16:36.629Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"f720b48b-d88a-4012-b085-245b02efb689","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././main.cpp","data_uuid":"f3725fc1-7e5c-44c4-8610-ce5b235bd021"}
+2015-10-09T21:16:36.629Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"f720b48b-d88a-4012-b085-245b02efb689","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././main.cpp","data_uuid":"f3725fc1-7e5c-44c4-8610-ce5b235bd021"}'
+2015-10-09T21:16:36.787Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"1508f7b8-4a36-49d3-a9e8-0b1f30b6070b","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.hpp","data_uuid":"123d4f27-2893-42d1-9bfd-b7cad5a19dca"}
+2015-10-09T21:16:36.787Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"1508f7b8-4a36-49d3-a9e8-0b1f30b6070b","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.hpp","data_uuid":"123d4f27-2893-42d1-9bfd-b7cad5a19dca"}'
+2015-10-09T21:16:36.854Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"4f337376-a7d7-4c09-b080-93e2962738a1","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.cpp","data_uuid":"fae464dd-dea0-47cb-b85c-311bb7ad671d"}
+2015-10-09T21:16:36.854Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"4f337376-a7d7-4c09-b080-93e2962738a1","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.cpp","data_uuid":"fae464dd-dea0-47cb-b85c-311bb7ad671d"}'
+2015-10-09T21:16:36.971Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"f6ca24d7-2901-48b7-8ffc-14440eeda18a","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.ui","data_uuid":"11a9fc40-b26d-43aa-a17d-613eaa3a31b9"}
+2015-10-09T21:16:36.971Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"f6ca24d7-2901-48b7-8ffc-14440eeda18a","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././mainwindow.ui","data_uuid":"11a9fc40-b26d-43aa-a17d-613eaa3a31b9"}'
+2015-10-09T21:16:37.037Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"2967301f-c2a2-4842-831b-eaa7cb6e2098","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././objvertexsystem.cpp","data_uuid":"ecb0f1b2-4b8f-4bce-9059-bf63e50c03fe"}
+2015-10-09T21:16:37.038Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"2967301f-c2a2-4842-831b-eaa7cb6e2098","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././objvertexsystem.cpp","data_uuid":"ecb0f1b2-4b8f-4bce-9059-bf63e50c03fe"}'
+2015-10-09T21:16:37.119Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"255b5d8e-fe3d-45fe-9880-86b55061dc38","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././objvertexsystem.hpp","data_uuid":"5a32f9c1-cf7d-439e-8e26-684cf6dc84f7"}
+2015-10-09T21:16:37.120Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"255b5d8e-fe3d-45fe-9880-86b55061dc38","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././objvertexsystem.hpp","data_uuid":"5a32f9c1-cf7d-439e-8e26-684cf6dc84f7"}'
+2015-10-09T21:16:37.225Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"e3ad0dc9-c48d-45dd-bbc7-c3586b51bdf4","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particle.cpp","data_uuid":"6a055c3f-6806-49ca-b623-239443099c0e"}
+2015-10-09T21:16:37.225Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"e3ad0dc9-c48d-45dd-bbc7-c3586b51bdf4","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particle.cpp","data_uuid":"6a055c3f-6806-49ca-b623-239443099c0e"}'
+2015-10-09T21:16:37.309Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"517d05ba-e52a-4826-9eae-e6d40097c07f","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particle.hpp","data_uuid":"80511ce3-aec2-4af5-97e7-4c4080402cb5"}
+2015-10-09T21:16:37.309Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"517d05ba-e52a-4826-9eae-e6d40097c07f","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particle.hpp","data_uuid":"80511ce3-aec2-4af5-97e7-4c4080402cb5"}'
+2015-10-09T21:16:37.411Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"87feacfa-7596-4fef-9115-f3c759bdd56a","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particlesystem.cpp","data_uuid":"abc575c5-f2ad-4e62-83e7-6cb61a21472e"}
+2015-10-09T21:16:37.411Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"87feacfa-7596-4fef-9115-f3c759bdd56a","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particlesystem.cpp","data_uuid":"abc575c5-f2ad-4e62-83e7-6cb61a21472e"}'
+2015-10-09T21:16:37.453Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"47199e5a-1ac5-4f54-ac85-237efb1cc097","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particlesystem.hpp","data_uuid":"7f5eebe2-7042-4a52-be75-5f69e81bf55c"}
+2015-10-09T21:16:37.453Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"47199e5a-1ac5-4f54-ac85-237efb1cc097","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././particlesystem.hpp","data_uuid":"7f5eebe2-7042-4a52-be75-5f69e81bf55c"}'
+2015-10-09T21:16:37.598Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"68e42a51-5993-4ba1-9900-0c01a08785e6","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././PhysicsSystem.pro","data_uuid":"d2a0af3b-a362-4566-937f-1942ef3a1317"}
+2015-10-09T21:16:37.598Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"68e42a51-5993-4ba1-9900-0c01a08785e6","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././PhysicsSystem.pro","data_uuid":"d2a0af3b-a362-4566-937f-1942ef3a1317"}'
+2015-10-09T21:16:37.784Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"dd2dc1e5-1d86-4ea8-846b-7dbb0bbf41e4","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././README.md","data_uuid":"4dc8e7b7-59e3-4bff-bec0-91cfed531624"}
+2015-10-09T21:16:37.785Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"dd2dc1e5-1d86-4ea8-846b-7dbb0bbf41e4","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././README.md","data_uuid":"4dc8e7b7-59e3-4bff-bec0-91cfed531624"}'
+2015-10-09T21:16:37.968Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"9630d574-885c-4b5e-b08f-3e80e2eedae3","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.cpp","data_uuid":"776b5bef-908a-422e-af11-7f3ff1fef354"}
+2015-10-09T21:16:37.968Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"9630d574-885c-4b5e-b08f-3e80e2eedae3","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.cpp","data_uuid":"776b5bef-908a-422e-af11-7f3ff1fef354"}'
+2015-10-09T21:16:38.156Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"6a72d68a-8cb1-4017-b6d2-d6c90d4b88da","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.hpp","data_uuid":"568fcebd-9c54-4c49-97c4-6821e9db0995"}
+2015-10-09T21:16:38.157Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"6a72d68a-8cb1-4017-b6d2-d6c90d4b88da","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.hpp","data_uuid":"568fcebd-9c54-4c49-97c4-6821e9db0995"}'
+2015-10-09T21:16:38.342Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"be7e7a8e-b165-4207-988d-dc2135986bda","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.ui","data_uuid":"548dfb78-508d-41b1-8945-1c7ae8e4f639"}
+2015-10-09T21:16:38.342Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"be7e7a8e-b165-4207-988d-dc2135986bda","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././simoptionsdialog.ui","data_uuid":"548dfb78-508d-41b1-8945-1c7ae8e4f639"}'
+2015-10-09T21:16:40.672Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"b875618d-2acf-4189-a1da-5c7ee5b0378b","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././vec.hpp","data_uuid":"41d91224-720f-43cf-90f0-d1eb8699158b"}
+2015-10-09T21:16:40.672Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"b875618d-2acf-4189-a1da-5c7ee5b0378b","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"././vec.hpp","data_uuid":"41d91224-720f-43cf-90f0-d1eb8699158b"}'
+2015-10-09T21:17:02.825Z - [34mdebug[39m: received control mesg {"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"git-ls","args":["--time","--limit",999999999,"--start",0,"."],"timeout":45,"bash":false,"err_on_exit":true,"id":"6d43d1c7-516b-4cba-a601-496f28904245"}
+2015-10-09T21:17:02.825Z - [34mdebug[39m: Handling '{"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"git-ls","args":["--time","--limit",999999999,"--start",0,"."],"timeout":45,"bash":false,"err_on_exit":true,"id":"6d43d1c7-516b-4cba-a601-496f28904245"}'
+2015-10-09T21:17:02.825Z - [34mdebug[39m: project_exec
+2015-10-09T21:17:02.825Z - [34mdebug[39m: execute_code: "git-ls --time --limit 999999999 --start 0 ."
+2015-10-09T21:17:02.825Z - [34mdebug[39m: Spawning the command git-ls with given args --time,--limit,999999999,--start,0,. and timeout of 45s...
+2015-10-09T21:17:02.828Z - [34mdebug[39m: Listen for stdout, stderr and exit events.
+2015-10-09T21:17:02.862Z - [34mdebug[39m: finished exec of git-ls (took 0.03699994087219238s)
+2015-10-09T21:17:02.862Z - [34mdebug[39m: stdout='{"files":[{"size":34458,"name":"vec.hpp","mtime":1444425400},{"size":4152,"name":"simoptionsdialog.ui","mtime":1444425398},{"size":804,"name":"simoptionsdialog.hpp","mtime":1444425398},{"size":3173,"name":"simoptionsdialog.cpp","mtime":1444425397},{"size":823,"name":"README.md","mtime":1444425397},{"size":1208,"name":"PhysicsSystem.pro","mtime":1444425397},{"size":1210,"name":"particlesystem.hpp","mtime":1444425397},{"size":5116,"name":"particlesystem.cpp","mtime":1444425397},{"size":832,"name":"particle...', stderr='', exit_code=0
+2015-10-09T21:17:16.389Z - [34mdebug[39m: received control mesg {"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"new-file","args":["2015-10-09-141715.term"],"timeout":10,"bash":false,"err_on_exit":true,"id":"3a36b78e-ac19-463a-a7c3-04338a235653"}
+2015-10-09T21:17:16.389Z - [34mdebug[39m: Handling '{"event":"project_exec","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./","command":"new-file","args":["2015-10-09-141715.term"],"timeout":10,"bash":false,"err_on_exit":true,"id":"3a36b78e-ac19-463a-a7c3-04338a235653"}'
+2015-10-09T21:17:16.389Z - [34mdebug[39m: project_exec
+2015-10-09T21:17:16.389Z - [34mdebug[39m: execute_code: "new-file 2015-10-09-141715.term"
+2015-10-09T21:17:16.389Z - [34mdebug[39m: Spawning the command new-file with given args 2015-10-09-141715.term and timeout of 10s...
+2015-10-09T21:17:16.391Z - [34mdebug[39m: Listen for stdout, stderr and exit events.
+2015-10-09T21:17:16.403Z - [34mdebug[39m: finished exec of new-file (took 0.014000177383422852s)
+2015-10-09T21:17:16.403Z - [34mdebug[39m: stdout='', stderr='', exit_code=0
+2015-10-09T21:17:16.545Z - [34mdebug[39m: received control mesg {"event":"read_file_from_project","id":"286eff40-60db-4060-8338-1f727b5983f1","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./2015-10-09-141715.term","archive":"tar.bz2"}
+2015-10-09T21:17:16.545Z - [34mdebug[39m: Handling '{"event":"read_file_from_project","id":"286eff40-60db-4060-8338-1f727b5983f1","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./2015-10-09-141715.term","archive":"tar.bz2"}'
+2015-10-09T21:17:16.545Z - [34mdebug[39m: Hash = da39a3ee-5e6b-44b0-9325-5bfef9560189
+2015-10-09T21:17:16.589Z - [34mdebug[39m: received control mesg {"event":"save_blob","sha1":"da39a3ee-5e6b-44b0-9325-5bfef9560189","ttl":0}
+2015-10-09T21:17:16.589Z - [34mdebug[39m: Handling '{"event":"save_blob","sha1":"da39a3ee-5e6b-44b0-9325-5bfef9560189","ttl":0}'
+2015-10-09T21:17:16.596Z - [34mdebug[39m: PARENT: received connection
+2015-10-09T21:17:16.636Z - [34mdebug[39m: received control mesg {"event":"connect_to_session","id":"d1a76692-3e6a-49f1-98d2-aa36c6e7be1f","type":"console","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","session_uuid":"3da8bb52-2063-463a-8707-f759ca09f1a7","params":{"command":"bash","path":"./","filename":"2015-10-09-141715.term"}}
+2015-10-09T21:17:16.636Z - [34mdebug[39m: Handling '{"event":"connect_to_session","id":"d1a76692-3e6a-49f1-98d2-aa36c6e7be1f","type":"console","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","session_uuid":"3da8bb52-2063-463a-8707-f759ca09f1a7","params":{"command":"bash","path":"./","filename":"2015-10-09-141715.term"}}'
+2015-10-09T21:17:16.637Z - [34mdebug[39m: connect_to_session -- type='console'
+2015-10-09T21:17:16.637Z - [34mdebug[39m: get_session: console session 3da8bb52-2063-463a-8707-f759ca09f1a7
+2015-10-09T21:17:16.637Z - [34mdebug[39m: console session not yet created -- put on stack
+2015-10-09T21:17:16.637Z - [34mdebug[39m: console session does not exist or is not running, so we make a new session
+2015-10-09T21:17:16.637Z - [34mdebug[39m: couldn't determine console server port; probably console server not running -- try restarting it
+2015-10-09T21:17:16.637Z - [34mdebug[39m: restart_console_server: "restarting the daemon"
+2015-10-09T21:17:16.638Z - [34mdebug[39m: restart_console_server: "killing all existing console sockets"
+2015-10-09T21:17:16.639Z - [34mdebug[39m: restart_console_server: "remove port_file=/projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.sagemathcloud/data/console_server.port"
+2015-10-09T21:17:16.639Z - [34mdebug[39m: restart_console_server: "restart console server"
+2015-10-09T21:17:16.639Z - [34mdebug[39m: execute_code: "console_server restart "
+2015-10-09T21:17:16.639Z - [34mdebug[39m: execute_code: writing temporary file that contains bash program.
+2015-10-09T21:17:16.639Z - [34mdebug[39m: Spawning the command bash with given args /tmp/f-11599-29019-5r58l0 and timeout of 10s...
+2015-10-09T21:17:16.641Z - [34mdebug[39m: Listen for stdout, stderr and exit events.
+2015-10-09T21:17:17.264Z - [34mdebug[39m: finished exec of bash (took 0.625s)
+2015-10-09T21:17:17.264Z - [34mdebug[39m: stdout='console_server restart
+[32mconsole_server.js daemon successfully started[0m
+', stderr='', exit_code=0
+2015-10-09T21:17:17.264Z - [34mdebug[39m: restart_console_server: "wait a little to see if /projects/016c032b-7b8b-4c07-b2c4-4cf094c6eb7e/.sagemathcloud/data/console_server.port appears, and if so read it and return port"
+2015-10-09T21:17:17.602Z - [34mdebug[39m: restart_console_server: "finished trying to restart console_server"
+2015-10-09T21:17:17.602Z - [34mdebug[39m: restarted console server, then got port = 50395
+2015-10-09T21:17:17.602Z - [34mdebug[39m: _new_session: defined by {"event":"connect_to_session","id":"d1a76692-3e6a-49f1-98d2-aa36c6e7be1f","type":"console","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","session_uuid":"3da8bb52-2063-463a-8707-f759ca09f1a7","params":{"command":"bash","path":"./","filename":"2015-10-09-141715.term"}}
+2015-10-09T21:17:17.602Z - [34mdebug[39m: misc_node: connecting to a locked socket on port 50395...
+2015-10-09T21:17:17.603Z - [34mdebug[39m: misc_node: connected, now sending secret token
+2015-10-09T21:17:17.604Z - [34mdebug[39m: misc_node: got back response: y
+2015-10-09T21:17:17.780Z - [34mdebug[39m: received control mesg {"event":"write_file_to_project","id":"268186d0-8b87-4767-9d10-1b831b870b47","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./2015-10-09-141715.term","data_uuid":"96a3b91c-bcc4-4844-a3cd-ea7b955ce0ec"}
+2015-10-09T21:17:17.780Z - [34mdebug[39m: Handling '{"event":"write_file_to_project","id":"268186d0-8b87-4767-9d10-1b831b870b47","project_id":"016c032b-7b8b-4c07-b2c4-4cf094c6eb7e","path":"./2015-10-09-141715.term","data_uuid":"96a3b91c-bcc4-4844-a3cd-ea7b955ce0ec"}'
